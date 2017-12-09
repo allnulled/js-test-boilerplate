@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sinon Cheat Sheet</title>
+	</head>
+	<body>
+		<h1>Sinon Cheat Sheet</h1>
+		<h3>Creating spies</h3>
+	<pre>
+	fn = sinon.spy();
+	fn();
+	fn.calledOnce == true;
+	fn.callCount == 1;</pre>
+<h3>Spying/stubbing</h3>
+<pre>
+	sinon.spy($, 'ajax');
+	$.ajax();
+	$.ajax.calledOnce == true;
+	sinon.stub($, 'ajax', function () { ... }) // function optional
+	$.ajax.calledWithMatch({ url: '/x' });
+	$.ajax.restore();
+</pre>
+<h3>Spy/stub properties</h3>
+<pre>
+	spy
+	.args//=> [ [..], [..] ] one per call
+	.thisValues
+	.returnValues
+	.called //=> true
+	.notCalled
+	.callCount
+	.calledOnce
+	.calledTwice
+	.calledThrice
+	.getCalls() //=> Array
+	.getCall(0)
+	.firstCall</pre>
+<h3>Anonymous stub</h3>
+<pre>
+	stub = sinon.stub().returns(42)
+	stub() == 42
+	stub.withArgs(42).returns(1)
+		.withArgs(43).throws("TypeError")
+	stub.returns(1)
+		.throws("TypeError")
+		.returnsArg(0) // Return 1st argument
+		.callsArg(0)</pre>
+<h3>Fake date</h3>
+<pre>
+	sinon.useFakeTimers(+new Date(2011,9,1));
+</pre>
+<h3>Fake server</h3>
+<pre>
+	server = sinon.fakeServer.create()
+	$.get('/file.json', ...)
+	server.requests[0].respond(200, {
+		'Content-Type': 'application/json'
+	}, JSON.stringify({ 
+		hello: 'world'
+	}));
+	server.restore();
+</pre>
+<h3>Fake XHR</h3>
+<pre>
+	xhr = sinon.useFakeXMLHttpRequest();
+	xhr.restore();
+</pre>
+<h3>Sandbox</h3>
+<pre>
+	beforeEach(function() {
+		global.sinon = require('sinon').sandbox.create()
+	});
+</pre>
+<pre>
+	afterEach(function() {
+		global.sinon.restore();
+	});
+</pre>
+</body>
+</html>

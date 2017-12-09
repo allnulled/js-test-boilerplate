@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CasperJS Docs Summary</title>
+		<style type="text/css">
+			body {
+				font-family: monospace;
+			}
+			a,a:visited {
+				display: block;
+				color: black;
+				text-decoration: none;
+			}
+			.title a {
+				padding: 20px;
+				border: 1px solid #222;
+			}
+			a:hover {
+				background-color: #222;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>CasperJS Docs Summary</h1>
+		<div>
+			<a href="http://docs.casperjs.org/en/latest/">Last version's docs here.</a>
+			<p>API Reference Overview</p>
+			<a href='http://docs.casperjs.org/en/latest/modules/index.html#api-documentation'>¶</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/casper.html'>The casper module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#the-casper-class'>The Casper class</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#index-1'>Casper.options</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#clientscripts'>clientScripts</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#exitonerror'>exitOnError</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#httpstatushandlers'>httpStatusHandlers</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#loglevel'>logLevel</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onalert'>onAlert</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#ondie'>onDie</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onerror'>onError</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onloaderror'>onLoadError</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onpageinitialized'>onPageInitialized</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onresourcereceived'>onResourceReceived</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onresourcerequested'>onResourceRequested</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onstepcomplete'>onStepComplete</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onsteptimeout'>onStepTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#ontimeout'>onTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#onwaittimeout'>onWaitTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#page'>page</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#pagesettings'>pageSettings</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#remotescripts'>remoteScripts</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#safelogs'>safeLogs</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#silenterrors'>silentErrors</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#steptimeout'>stepTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#timeout'>timeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#verbose'>verbose</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#viewportsize'>viewportSize</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#retrytimeout'>retryTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waittimeout'>waitTimeout</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#casper-prototype'>Casper prototype</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#back'>back()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#base64encode'>base64encode()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#bypass'>bypass()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#click'>click()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#clicklabel'>clickLabel()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#capture'>capture()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#capturebase64'>captureBase64()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#captureselector'>captureSelector()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#clear'>clear()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#clearcache'>clearCache()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#clearmemorycache'>clearMemoryCache()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#debughtml'>debugHTML()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#debugpage'>debugPage()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#die'>die()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#download'>download()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#each'>each()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#eachthen'>eachThen()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#echo'>echo()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#evaluate'>evaluate()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#evaluateordie'>evaluateOrDie()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#exit'>exit()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#exists'>exists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#fetchtext'>fetchText()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#forward'>forward()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#log'>log()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#fill'>fill()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#fillselectors'>fillSelectors()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#filllabels'>fillLabels()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#fillxpath'>fillXPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getcurrenturl'>getCurrentUrl()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementattribute'>getElementAttribute()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementsattribute'>getElementsAttribute()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementbounds'>getElementBounds()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementsbounds'>getElementsBounds()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementinfo'>getElementInfo()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getelementsinfo'>getElementsInfo()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getformvalues'>getFormValues()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getglobal'>getGlobal()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#gethtml'>getHTML()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#getpagecontent'>getPageContent()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#gettitle'>getTitle()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#mouseevent'>mouseEvent()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#newpage'>newPage()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#open'>open()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#reload'>reload()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#repeat'>repeat()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#resourceexists'>resourceExists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#run'>run()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#scrollto'>scrollTo()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#scrolltobottom'>scrollToBottom()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#sendkeys'>sendKeys()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#options'>Options</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#sethttpauth'>setHttpAuth()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#setmaxlisteners'>setMaxListeners()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#start'>start()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#status'>status()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#switchtoframe'>switchToFrame()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#switchtomainframe'>switchToMainFrame()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#switchtoparentframe'>switchToParentFrame()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#then'>then()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenbypass'>thenBypass()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenbypassif'>thenBypassIf()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenbypassunless'>thenBypassUnless()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenclick'>thenClick()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenevaluate'>thenEvaluate()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenopen'>thenOpen()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#thenopenandevaluate'>thenOpenAndEvaluate()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#tostring'>toString()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#unwait'>unwait()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#useragent'>userAgent()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#viewport'>viewport()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#visible'>visible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#wait'>wait()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitfor'>waitFor()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforalert'>waitForAlert()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforexec'>waitForExec()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforpopup'>waitForPopup()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforresource'>waitForResource()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforurl'>waitForUrl()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforselector'>waitForSelector()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitwhileselector'>waitWhileSelector()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitforselectortextchange'>waitForSelectorTextChange()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitfortext'>waitForText()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waituntilvisible'>waitUntilVisible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#waitwhilevisible'>waitWhileVisible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#warn'>warn()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#withframe'>withFrame()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#withpopup'>withPopup()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#withselectorscope'>withSelectorScope()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/casper.html#zoom'>zoom()</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/clientutils.html'>The clientutils module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#index-2'>Bookmarklet</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#clientutils-prototype'>ClientUtils prototype</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#echo'>echo()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#encode'>encode()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#exists'>exists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#findall'>findAll()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#findone'>findOne()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#forcetarget'>forceTarget()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getbase64'>getBase64()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getbinary'>getBinary()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getdocumentheight'>getDocumentHeight()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getdocumentwidth'>getDocumentWidth()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getelementbounds'>getElementBounds()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getelementsbounds'>getElementsBounds()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getelementbyxpath'>getElementByXPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getelementsbyxpath'>getElementsByXPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getfieldvalue'>getFieldValue()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#getformvalues'>getFormValues()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#log'>log()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#makeselector'>makeSelector()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#parameter-type-values'>Parameter type values:</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#mouseevent'>mouseEvent()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#removeelementsbyxpath'>removeElementsByXPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#sendajax'>sendAJAX()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#setfieldvalue'>setFieldValue()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#options'>Options</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/clientutils.html#visible'>visible()</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/colorizer.html'>The colorizer module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/colorizer.html#skipping-casperjs-styling-operations'>Skipping CasperJS styling operations</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/colorizer.html#available-predefined-styles'>Available predefined styles</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/colorizer.html#colorize'>colorize()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/colorizer.html#format'>format()</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/mouse.html'>The mouse module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#the-mouse-class'>The Mouse class</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#click'>click()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#doubleclick'>doubleclick()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#rightclick'>rightclick()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#down'>down()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#move'>move()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/mouse.html#up'>up()</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/tester.html'>The tester module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#the-tester-prototype'>The Tester prototype</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assert'>assert()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertdoesntexist'>assertDoesntExist()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertequals'>assertEquals()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserteval'>assertEval()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertevalequals'>assertEvalEquals()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertelementcount'>assertElementCount()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertexists'>assertExists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertfalsy'>assertFalsy()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertfield'>assertField()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertfieldname'>assertFieldName()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertfieldcss'>assertFieldCSS()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertfieldxpath'>assertFieldXPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserthttpstatus'>assertHttpStatus()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertmatch'>assertMatch()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertnot'>assertNot()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertnotequals'>assertNotEquals()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertnotvisible'>assertNotVisible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertraises'>assertRaises()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertselectordoesnthavetext'>assertSelectorDoesntHaveText()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertselectorhastext'>assertSelectorHasText()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertresourceexists'>assertResourceExists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttextexists'>assertTextExists()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttextdoesntexist'>assertTextDoesntExist()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttitle'>assertTitle()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttitlematch'>assertTitleMatch()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttruthy'>assertTruthy()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserttype'>assertType()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertinstanceof'>assertInstanceOf()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#asserturlmatch'>assertUrlMatch()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertvisible'>assertVisible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#assertallvisible'>assertAllVisible()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#begin'>begin()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#colorize'>colorize()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#comment'>comment()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#done'>done()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#error'>error()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#fail'>fail()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#formatmessage'>formatMessage()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#getfailures'>getFailures()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#getpasses'>getPasses()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#info'>info()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#pass'>pass()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#renderresults'>renderResults()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#setup'>setUp()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#skip'>skip()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/tester.html#teardown'>tearDown()</a>
+			<div class="title"><a href='http://docs.casperjs.org/en/latest/modules/utils.html'>The utils module</a></div>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#functions-reference'>Functions reference</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#bettertypeof'>betterTypeOf()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#betterinstanceof'>betterInstanceOf()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#dump'>dump()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#fileext'>fileExt()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#fillblanks'>fillBlanks()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#format'>format()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#getpropertypath'>getPropertyPath()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#inherits'>inherits()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isarray'>isArray()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#iscasperobject'>isCasperObject()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#iscliprect'>isClipRect()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isfalsy'>isFalsy()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isfunction'>isFunction()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isjsfile'>isJsFile()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isnull'>isNull()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isnumber'>isNumber()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isobject'>isObject()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isstring'>isString()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#istruthy'>isTruthy()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#istype'>isType()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#isundefined'>isUndefined()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#iswebpage'>isWebPage()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#mergeobjects'>mergeObjects()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#node'>node()</a>
+			<a href='http://docs.casperjs.org/en/latest/modules/utils.html#serialize'>serialize()</a>
+		</div>
+	</body>
+</html>
